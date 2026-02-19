@@ -1,6 +1,6 @@
-# LM meets ML: Data-efficient Anomaly Detection on Unstable Logs
+# LLM meets ML: Data-efficient Anomaly Detection on Unstable Logs
 
-Welcome to the repository for the research paper "LM meets ML: Data-efficient Anomaly Detection on Unstable Logs." This package aims to facilitate the replication of our studies, made available to reviewers. We plan to make it publicly available  under a suitable license upon acceptance to encourage further research and comparison in the field of unstable log anomaly detection.
+Welcome to the repository for the research paper "LLM meets ML: Data-efficient Anomaly Detection on Unstable Logs." This package aims to facilitate the replication of our studies, made available to reviewers. We plan to make it publicly available  under a suitable license upon acceptance to encourage further research and comparison in the field of unstable log anomaly detection.
 
 ## Authors
 - Fatemeh Hadadi (fhada072@uottawa.ca)
@@ -39,6 +39,14 @@ Please initialize Python's virtual environment and install the requirements:
  source venv/bin/activate
  (venv) pip install -r requirements.txt
 ```
+
+## Dataset Availability
+
+Due to GitHub size limitations, the datasets used in this study are hosted on Figshare and can be downloaded from:
+
+https://doi.org/10.6084/m9.figshare.25988170
+
+After downloading, place the datasets in the /dataset directory as expected by the scripts.
 ## Dataset
 Datasets including ADFA-U, LOGEVOL-U, SynHDFS-U, and SYNEVOL-U, as well as their stable configurations, are provided in the /dataset folder.
 
@@ -140,3 +148,19 @@ Some Optional Arguments:
 ```shell script
 (venv) python statistical_test_main.py results_flexlog_ADFA_adduser.csv results_baseline_ADFA_adduser.csv
 ```
+
+## Citation
+If you use this replication package, please cite:
+
+```bibtex
+@article{Hadadi_2025,
+   title={LLM meets ML: Data-efficient Anomaly Detection on Unstable Logs},
+   ISSN={1557-7392},
+   url={http://dx.doi.org/10.1145/3771283},
+   DOI={10.1145/3771283},
+   journal={ACM Transactions on Software Engineering and Methodology},
+   publisher={Association for Computing Machinery (ACM)},
+   author={Hadadi, Fatemeh and Xu, Qinghua and Bianculli, Domenico and Briand, Lionel},
+   year={2025},
+   month=oct
+}
